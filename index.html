@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <!-- metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- page title -->
+  <title>Comp Sci Web Site</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="css/odin-0.10.4.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+  <!--carousel style-->
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- start making your grid here -->
+
+
+  <header>
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="https://www.manutd.com/"><img class="head" src="img/manu.png"></a>
+          <h1>Official Website of Man United</h1>
+          <p class="sub"><a href="https://www.google.com/maps/place/Old+Trafford/@53.4630589,-2.2935288,17z/data=!3m1!4b1!4m5!3m4!1s0x487bae72e7e47f69:0x6c930e96df4455fe!8m2!3d53.4630589!4d-2.2913401">Sir Matt Busby Way, Stretford, Manchester M16 0RA, UK</a></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-slideout-md navbar-spread">
+     <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+
+      <div class="navbar-menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Awards</a></li>
+          <li><a href="#">Coaching Staff</a></li>
+          <li><a href="merchandise.html">Merchandise</a></li>
+          <li><a href="https://www.premierleague.com/">Premier League</a></li>
+          <li><a href="#">Ticketing</a></li>
+        </ul>
+      </div>
+    </nav>
+
+ <div class="container">
+  <main>
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="owl-carousel owl-theme">
+            <div><img src="img/oldtraf.jpg" alt="old trafford"></div>
+            <div><img src="img/ron.jpg" alt="ronaldo"></div>
+            <div><img src="img/team.jpg" alt="team"></div>
+            <div><img src="img/jose.jpg" alt="jose"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <h2>Info</h2>
+            <p class="info">We are the best club in the world and Ronaldo should've never left us.</p>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+          <h2>Sign up for daily infomation about the club</h2>
+            <form action="thanks.html" method="post">
+              <fieldset>
+                  <label for="name">Name:</label>
+                    <input id="name" type="text" name="name"><br>
+                  <label for="address">E-mail:</label>
+                    <input id="email" type="text" name="email"><br>
+                  <label for="city">City:</label>
+                    <input id="city" type="text" name="city"><br>
+                  <label for="state">State:</label>
+                    <input id="state" type="text" name="state" maxlength="2" size="2">
+                  <label for="zip">Zip:</label>
+                    <input id="zip" type="text" name="zip" maxlength="5" size="5"><br>
+                  <label for="card">Credit card number:</label>
+                    <input id="card" type="text" name="card" maxlength="12" size="12">
+              </fieldset>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4"><iframe src="https://calendar.google.com/calendar/b/1/embed?mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=kburke4251%40gmail.com&amp;color=%231B887A&amp;src=ov0dk4m6dedaob7oqse4nrda4s%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=America%2FNew_York" style="border-width:0" width="300" height="300" frameborder="0" scrolling="no"></iframe></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <footer>
+    <div class="container-lg">
+      <div class="row">
+        <div class="col-xs-12 col-md-6"><a href="https://www.instagram.com">
+          <br><img class="logo" src="img/instagram_logo.png" alt="Instagram"></a>
+          <a href="https://twitter.com">
+          <img class="logo" src="img/twitter_logo.png" alt="Twitter"></a>
+          <a href="https://www.facebook.com">
+          <img class="logo" src="img/facebook_logo.png" alt="Facebook"></a>
+          <p>© 2018 Manchester United<br>
+          All Rights Reserved.</br></p>
+          <p>For additional Information email Jose Mourinho directly</p>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9501.208834126772!2d-2.2913401!3d53.4630589!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6c930e96df4455fe!2sOld+Trafford!5e0!3m2!1sen!2sus!4v1538678008851" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+        </div>
+  </footer>
+
+  <!-- include any javascript below this line -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <script src="js/odin-0.7.1.js"></script>
+
+  <script src="js/owl.carousel.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          autoplay: true,
+          autoplayHoverPause: true,
+          autoplayTimeout: 2500,
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false
+      })
+    });
+  </script>
+
+
+</body>
+</html>

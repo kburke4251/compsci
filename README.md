@@ -1,1 +1,1 @@
-# compsci
+# school
